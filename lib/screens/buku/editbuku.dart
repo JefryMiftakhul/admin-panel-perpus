@@ -33,7 +33,7 @@ class _EditbukuState extends State<Editbuku> {
     /*return await http.post(
       "${Env.URL_PREFIX}/update.php",*/
     return await http.post(
-        Uri.parse('$UPDATESBOOK'),
+        Uri.parse('$BUKU'),
       body: {
         "id": widget.buku.id.toString(),
         "judul": judulController.text,

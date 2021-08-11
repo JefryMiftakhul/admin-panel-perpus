@@ -19,7 +19,7 @@ class _DetailsauthorState extends State<Detailsauthor> {
     /*await http.post(
       "${Env.URL_PREFIX}/delete.php",*/
         await http.post(
-          Uri.parse('$DELETESAUTHOR'),
+          Uri.parse('$AUTHOR'),
       body: {
         'id': widget.pengarang.id.toString(),
       },

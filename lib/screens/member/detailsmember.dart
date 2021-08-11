@@ -19,7 +19,7 @@ class _DetailsmemberState extends State<Detailsmember> {
     /*await http.post(
       "${Env.URL_PREFIX}/delete.php",*/
         await http.post(
-          Uri.parse('$DELETESMEMBER'),
+          Uri.parse('$MEMBER'),
       body: {
         'id': widget.member.id.toString(),
       },

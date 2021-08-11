@@ -27,7 +27,7 @@ class _CreateState extends State<Create> {
     /*return await http.post(
       "${Env.URL_PREFIX}/create.php",*/
       return await http.post(
-        Uri.parse('$ADDS'),
+        Uri.parse('$GENRE'),
       body: {
         "name": nameController.text,
         //"age": ageController.text,

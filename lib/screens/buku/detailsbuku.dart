@@ -19,7 +19,7 @@ class _DetailsbukuState extends State<Detailsbuku> {
     /*await http.post(
       "${Env.URL_PREFIX}/delete.php",*/
         await http.post(
-          Uri.parse('$DELETESBOOK'),
+          Uri.parse('$BUKU'),
       body: {
         'id': widget.buku.id.toString(),
       },

@@ -19,7 +19,7 @@ class _DetailsState extends State<Details> {
     /*await http.post(
       "${Env.URL_PREFIX}/delete.php",*/
         await http.post(
-          Uri.parse('$DELETES'),
+          Uri.parse('$GENRE'),
       body: {
         'id': widget.genre.id.toString(),
       },

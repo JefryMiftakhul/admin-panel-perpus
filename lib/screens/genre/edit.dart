@@ -27,7 +27,7 @@ class _EditState extends State<Edit> {
     /*return await http.post(
       "${Env.URL_PREFIX}/update.php",*/
     return await http.post(
-        Uri.parse('$UPDATES'),
+        Uri.parse('$GENRE'),
       body: {
         "id": widget.genre.id.toString(),
         "name": nameController.text,

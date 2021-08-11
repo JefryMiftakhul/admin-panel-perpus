@@ -24,7 +24,7 @@ class HomeBukuState extends State<HomeBuku> {
   }
 
   Future<List<Buku>> getBukuList() async {
-    final response = await http.get(Uri.parse('$GETALLSBOOK'));
+    final response = await http.get(Uri.parse('$BUKU'));
     final items = json.decode(response.body).cast<Map<String, dynamic>>();
     print(items);
     List<Buku> bukus = items.map<Buku>((json) {

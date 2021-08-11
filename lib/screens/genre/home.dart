@@ -24,7 +24,7 @@ class HomeState extends State<Home> {
   }
 
   Future<List<Genre>> getGenreList() async {
-    final response = await http.get(Uri.parse('$GETALLS'));
+    final response = await http.get(Uri.parse('$GENRE'));
     final items = json.decode(response.body).cast<Map<String, dynamic>>();
     print(items);
     List<Genre> genres = items.map<Genre>((json) {

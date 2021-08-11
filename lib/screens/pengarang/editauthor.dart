@@ -27,7 +27,7 @@ class _EditAuthortState extends State<Editauthor> {
     /*return await http.post(
       "${Env.URL_PREFIX}/update.php",*/
     return await http.post(
-        Uri.parse('$UPDATESAUTHOR'),
+        Uri.parse('$AUTHOR'),
       body: {
         "id": widget.pengarang.id.toString(),
         "name": nameController.text,

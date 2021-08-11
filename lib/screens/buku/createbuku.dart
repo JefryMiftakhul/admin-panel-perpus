@@ -34,7 +34,7 @@ class _CreatebukuState extends State<Createbuku> {
     /*return await http.post(
       "${Env.URL_PREFIX}/create.php",*/
       return await http.post(
-        Uri.parse('$ADDSBOOK'),
+        Uri.parse('$BUKU'),
       body: {
         "judul": judulController.text,
         "keyword": keywordController.text,

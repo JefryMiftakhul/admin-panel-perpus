@@ -24,7 +24,7 @@ class HomeMemberState extends State<HomeMember> {
   }
 
   Future<List<Member>> getMemberList() async {
-    final response = await http.get(Uri.parse('$GETALLSMEMBER'));
+    final response = await http.get(Uri.parse('$MEMBER'));
     final items = json.decode(response.body).cast<Map<String, dynamic>>();
     print(items);
     List<Member> members = items.map<Member>((json) {

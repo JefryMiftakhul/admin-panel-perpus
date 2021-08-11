@@ -27,7 +27,7 @@ class _CreateAuthorState extends State<Createauthor> {
     /*return await http.post(
       "${Env.URL_PREFIX}/create.php",*/
       return await http.post(
-        Uri.parse('$ADDSAUTHOR'),
+        Uri.parse('$AUTHOR'),
       body: {
         "name": nameController.text,
         "tanggal_lahir": birthController.text,

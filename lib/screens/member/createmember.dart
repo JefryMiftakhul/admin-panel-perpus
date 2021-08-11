@@ -25,7 +25,7 @@ class _CreatememberState extends State<Createmember> {
   // Http post request to create new data
   Future _createMember() async {
       return await http.post(
-        Uri.parse('$ADDSMEMBER'),
+        Uri.parse('$MEMBER'),
       body: {
         "name": nameController.text,
         "tanggal_lahir": birthController.text,

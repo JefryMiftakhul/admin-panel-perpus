@@ -28,7 +28,7 @@ class _EditmemberState extends State<Editmember> {
     /*return await http.post(
       "${Env.URL_PREFIX}/update.php",*/
     return await http.post(
-        Uri.parse('$UPDATESMEMBER'),
+        Uri.parse('$MEMBER'),
       body: {
         "id": widget.member.id.toString(),
         "name": nameController.text,

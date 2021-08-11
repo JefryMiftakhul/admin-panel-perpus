@@ -24,7 +24,7 @@ class HomeAuthorState extends State<HomeAuthor> {
   }
 
   Future<List<Pengarang>> getPengarangList() async {
-    final response = await http.get(Uri.parse('$GETALLSAUTHOR'));
+    final response = await http.get(Uri.parse('$AUTHOR'));
     final items = json.decode(response.body).cast<Map<String, dynamic>>();
     print(items);
     List<Pengarang> pengarangs = items.map<Pengarang>((json) {
